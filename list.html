@@ -1,0 +1,45 @@
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <h3 class="panel-title">WELCOME TO Suppliers!!!</h3>
+    </div>
+        <div class="panel-body form-horizontal"  role="form">
+            <div class="panel-body form-horizontal"  role="form" ng-controller="EventsCtrl">
+                <!--Evnts : {{eventsArr.search.events.event}}-->
+                <h2>Supplier and Product Details.</h2>
+                <div>
+                    <select ng-model="selectedSource" ng-options="source.name for source in sourceList">
+                        <option value="">-- Select Supplier --</option>
+                    </select>
+
+                    <select ng-model="selectedItem" ng-options="item.name for item in selectedSource.suboptions">
+                        <option value="">-- Select a Product --</option>
+                    </select>
+                </div>
+                <div>
+                    <button ng-click="_getPriceData();">Get Data</button>
+                </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Supplier</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--<tr ng-repeat="data in suppliers.supplierData">
+                    <td>{{data.supplier}}</td>
+                    <td>{{data.product[$index].name}}</td>
+                    <td>{{data.product[$index].price}}</td>
+                </tr>-->
+                <tr>
+                    <td>{{dataDisplay.supp}}</td>
+                    <td>{{dataDisplay.prod}}</td>
+                    <td>{{dataDisplay.price}}</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>

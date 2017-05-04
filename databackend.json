@@ -1,0 +1,23 @@
+{
+"supplierData": [
+{
+  "supplier" : "New Co Ltd",
+  "product" :[
+{ "name" : "Small wongle", "price" : "5"},
+    { "name" : "Large wongle", "price" : "8"},
+    { "name" : "Super wongle", "price" : "12"}
+]
+
+},
+  {
+    "supplier" : "Old Co Ltd",
+    "product" :[
+      { "name" : "Mini wongle", "price" : "4"},
+      { "name" : "Small wongle", "price" : "6"},
+      { "name" : "Large wongle", "price" : "9"},
+      { "name" : "Super wongle", "price" : "13"}
+    ]
+
+  }
+  ]
+  }
